@@ -1,0 +1,127 @@
+﻿Test Case ID,Test Scenario,Precondition,Test Condition,Test Case Steps,Test Data,Expected Result
+<Sequence number>,<Identify test scenarios>,<This cell specifies the state a system and its environment must be in before this specific test case can be run>,<This cell describes what to test for i.e. the condition which is being tested for>,<This cell describes how to test i.e. the detailed testing procedure>,<Mention test data to be used>,<Describe the expected test result>
+TC_Services_01,TS_Services_01,User is able to open the browser and enter the website URL,To validate that when website url is entered in the browser it opens the website.,"1. Open Browser
+2. Enter URL for the website
+
+
+",https://www.apollo247.com/,It should open services page
+TC_Services_02,TS_Services_01,User is able to enter the website URL in all browsers,To validate that website is displayed correctly in all the browsers,"1. Open Browser
+2. Enter URL for the website
+3. Visit different pages and features of website.
+4. Follow the same steps in different browsers
+",,It should display the content of  website correctly in all browsers.
+TC_Services_03,TS_Services_01,User is able to see all the details in all browsers,To validate that website is displayed correctly in all the browsers,"1. Open Browser
+2. Enter URL for the website
+3. Visit different pages and features of website.
+4. Follow the same steps in different browsers
+",,User can perform all tasks  
+TC_Online Doctor Consulation_01,TS_Online Doctor Consulation_01, User should find search option for doctors,To validate that user is able to search doctors by their names,"1.click on the search bar
+2. type the name to be searched
+
+
+","""raj""",user should show searched doctors list
+TC_Online Doctor Consulation_02,TS_Online Doctor Consulation_01, search bar is visible,To validate if invalid names or empty field are entered by user,"1.click on the search bar
+2.enter a input
+
+
+",""" ""/""abbaaa""",should show 'invalid data entered' text message
+TC_Online Doctor Consulation_03,TS_Online Doctor Consulation_01, User should enter city name ,To validate that user is able to search doctors by their city names,"1.click the type bar
+2.type the city name
+
+
+","""Bangalore""",doctors list by this city names should be displayed
+TC_Online Doctor Consulation_04,TS_Online Doctor Consulation_01,should click on the select particular location,To validate that user is able to enter the location,"select location option on the webpage
+   
+","""Banaswadi""",location should be added 
+TC_Online Doctor Consulation_05,TS_Online Doctor Consulation_01, date selecting option should be selected,To validate that user is able to select the date,select date option on the website    ,"""27/02/2024""",date should be added
+TC_Online Doctor Consulation_06,TS_Online Doctor Consulation_01,all specialities should be visible to select,To validate that user is able to choose specific speciality,"1.select speciality option
+2.Select one","""Cardiology""", user should be able to select speciality 
+TC_Online Doctor Consulation_07,TS_Online Doctor Consulation_01, User should enter the details ,To validate if data is getting submitted ,Click submit button,,details should be submitted
+TC_Online Doctor Consulation_08,TS_Online Doctor Consulation_01,all symptoms to select and to type should be visible,To validate that user is able to enter their symptoms,"
+1. Enter symptoms option
+2. select the symptoms user is suffering from","""Headache""",user should be able to select specific symptoms
+TC_Online Doctor Consulation_09,TS_Online Doctor Consulation_01,enter a specific speciality,To validate that user is able to view a list of doctors by their speciality,"1.list of speciality are displayed
+2.Click on specific speciality to view full list of doctors",,doctors of that speciality should be displayed
+TC_Online Doctor Consulation_10,TS_Online Doctor Consulation_01,User should choose a mode of communication of their preference,To validate that user is able to contact doctors by call or text,"Choose the contact mode option
+",call/text, user should be able to chooses one option 
+TC_Online Doctor Consulation_11,TS_Online Doctor Consulation_01,select a type of consulation,To validate that user is able to choose a type of consulation," 1.Go to consulation tab
+2.Choose type of consulation option",Virtual/Meet in person,User should be able to choose any consulation type
+TC_Online Doctor Consulation_12,TS_Online Doctor Consulation_01,User should click on the link,To validate that user is able to download the app by  clicking the link, Click on the link to download,,app should be downloaded
+TC_Online Doctor Consulation_13,TS_Online Doctor Consulation_01,User should click on the request to call back option to receive the call back,To validate that user is able to click the call back option,"1. Click on the call back option
+2.Enter the user details and submit it","""abcdefg
+ashch@gmail.com
+8757924313""",user should be to able to enter details for a request 
+TC_Online Doctor Consulation_14,TS_Online Doctor Consulation_01,user should enter the details asked ,To validate that user is getting proper message when invalid data is entered,Entering missing or wrong data in required field,"""abcdefg
+ashch@g.com
+8757924313""",'invalid data'text message  is displayed and new data is asked to entered
+TC__Apollo Circle Membership_01,TS__Apollo Circle Membership_01, all the benefits page is visible,To validate if user can view all the benefits options,"1. go to membership page
+2.View the various benefits in the page",, user should be able to view possible benefits 
+TC__Apollo Circle Membership_02,TS__Apollo Circle Membership_01,products should be visible along with discounts,To validate if user can get discounts on any products,"1. click on the product 
+2.View the discounts on various products available ",,user should be able to see all the discounts on products
+TC__Apollo Circle Membership_03,TS__Apollo Circle Membership_01,products are to be ordered ,To validate if user can get unlimited delivery any options,"1. Add all the products to cart 
+2. place order
+3.View the unlimited delivery option for all products ",,user should be able to get access for unlimited delivery on all products
+TC__Apollo Circle Membership_04,TS__Apollo Circle Membership_01,enter the speciality                ,To validate if user can view all the list of emergency doctors on duty ,"1.type the speciality 
+2.View the drop down list of emergency doctors",,user should be able to views all doctors on emergency call
+TC__Apollo Circle Membership_05,TS__Apollo Circle Membership_01, already a member and has a plan subscribed ,To validate if user can view upgraded plans ,"1. go to membership page
+2.View the various upgraded plans under the list  ",,upgraded plans should be seen by all 
+TC__Apollo Circle Membership_06,TS__Apollo Circle Membership_01,plans should be visible under subscription tab,To validate if user can view all plans available to subscribe,"1. click explore plans
+2.View a list of plans that user wants to subscribe",,plans subscribed should be visible by the user 
+TC__Apollo Circle Membership_07,TS__Apollo Circle Membership_01,click on the back option,To validate if user can return to main page if they do not find any suitable plan,"1.Click the 'go back' option on the page
+2.This redirects to the previous page
+",,user should be able to return to main page
+TC__Apollo Circle Membership_08,TS__Apollo Circle Membership_01, click the '+' icon,To validate if user can view a list of questions with answers so they can clear their doubts,"1.Click the '+' icon at the end of question
+",,list of possible questions and their answers should be seen
+TC_health tools_01,TS_health tools_01,different calculation options are on the page   ,To validate if user can view different calculation option,"1.go to blogs page
+2.Click the 'health tools'",,list of different health tools should be visible
+TC_health tools_02,TS_health tools_01,click the calculate BMI option  ,To validate if user is able to view 'BMI calculate option',"1.Click the 'health tools'
+2. Click on the calculate BMI option",,calculate button under BMI should be visible
+TC_health tools_03,TS_health tools_01,click the calculate BMI option  ,To valid if calculate button is working,"1. enter all the details asked
+2.click on the calculate button","""Female
+8e
+76
+14""",result should be shown
+TC_health tools_04,TS_health tools_01,click calculate calories required option,To validate if user is able to view 'calories required calculate option',1.Click the 'health tools'            2. Click on the calculate calories required option,,calculate button under calories required should be visible
+TC_health tools_05,TS_health tools_01,click calculate calories required option,To valid if calculate button is working,"1. enter all the details asked
+2.click on the calculate button","""87
+Female
+56
+Ligthly active""
+",result should be shown
+TC_health tools_06,TS_health tools_01,page should have a gender entry filed ,To validate if user can choose gender by clicking the radio button,1.Click the calculate option     2. Click on the radio button to choose one,"""Female""",user should be able to select gender 
+TC_health tools_07,TS_health tools_01,page should have a age entry field ,To validate if user can enter number in age field,"1.click on tools page 
+2.click a specific calculator
+3.Click on the age field to enter","""22""",user should be able to enter age 
+TC_health tools_08,TS_health tools_01,page should have a weight entry field   ,To validate if user can enter number in weight field,"1.click on tools page 
+2.click a specific calculator
+3.Click on the weight field to enter","""48""",user should be able to enter weight
+TC_health tools_09,TS_health tools_01,page should have a height(in feet) entry field    ,To validate if user can enter number in height field,"1.click on tools page 
+2.click a specific calculator
+3.Click on the heightfield to enter","""5.1""",user should be able to enter height 
+TC_health tools_10,TS_health tools_01, different activity levels should be shown on the page,To validate if user can choose only one activity level,"1.click on tools page 
+2.click a specific calculator
+3.Click on the activity level field to enter","""rarely active""",user should be able to select a level
+TC_health tools_11,TS_health tools_01, all the details asked should be entered,To validate if user can view entered details after entering each one,"1.enter all the details asked
+2.View the entered details at the left side",,entered details should be  visible at the left hand side
+TC_health tools_12,TS_health tools_01,click the calculate button  ,To validate if user can see results after calculating ,"1.enter all the details
+2.Click 'calculate' button to check the result",,after calculation result should be seen 
+TC_health tools_13,TS_health tools_01,click the back button   ,To validate if user can edit the entered data by clicking on the previous button,"1.enter the details
+2.proceed to the next one
+3.Click the previous button for re entering",,user should be able to go the previous page 
+TC_health tools_14,TS_health tools_01,have to click the next button to enter data  ,To validate if the user can proceed after entering each input,"1.enter the details
+2.proceed to the next one
+3.Click the next button for entering to the next data",,after entering each data it should re direct to the next question 
+TC_Pro Health Program_01,TS_Pro Health Program_01, phone number field is visible and accepts data to enter ,To validate if the user can enter the phone number in the field,"1.click the pro health program page
+2.Click on 'get in touch' icon
+2.Click the field to enter phone number","""9725368245""",user should be able to enter phone number 
+TC_Pro Health Program_02,TS_Pro Health Program_01,re type the phone number asked in the entry field,To validate if the user can enters less than 10 digits ,"1.click the pro health program page
+2.Click on 'get in touch' icon
+2.Click the field to reenter phone number","""876534""",user should get 'Invalid mobile number' text message and asks to re enter 
+TC_Pro Health Program_03,TS_Pro Health Program_01, should be able to access the page and view the programs in explore tab,To validate if the user can explore more health programs,"1.click on 'lets go' icon
+2.Click the health programs icon to view all ",,user should be able to view all health programs 
+TC_Pro Health Program_04,TS_Pro Health Program_01, have to enter user details to generate their customized plan,To validate if the user can get their own individual plan to follow,"1.Click 'lets go' icon
+2.Enter user's details about health to know their plans","""Bangalore
+cardiology
+Angiogram""",user should get customized plan after entering details asked
+TC_Pro Health Program_05,TS_Pro Health Program_01,click the program tab and view the description of health programs ,To validate if the user can view the description of health programs for users to know about it,"1.Click the home page tab
+2.Click on each program to discover more about it",,user should be able to see description of health programs 
